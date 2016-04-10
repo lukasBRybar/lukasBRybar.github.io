@@ -3,214 +3,110 @@ html(lang='sk')
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
-  meta(http-equiv='x-ua-compatible' content='ie=edge, chrome=1')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
 
   meta(name='keywords' content='lukasBRybar')
   meta(name='description' content='lukasBRybar')
   meta(name='author' content='lukasBRybar')
   title lukasBRybar
   
-  // FONT
-  link(type='text/css' rel='stylesheet' href='http://fonts.googleapis.com/icon?family=Material+Icons')
-  
   // CSS
-  link(type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css')
+  link(type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css')
   link(type='text/css' rel='stylesheet' href='css/style.css')
-
+  
 body
-  .ui.main.text.container
-    h1.ui.header lukasBRybar
-    p.
-      Stránka sa pripravuje
   
-  .ui.stackable.borderless.main.menu
-    .ui.text.container
-      .header.item(href='#') 
-        img.logo(src='img/1.png') 
-        | lukasBRybar
-      a.ui.right.floated.item(href='#') about
-      a.ui.right.floated.item(href='#') features
-      a.ui.right.floated.item(href='#') portfolio
-      a.ui.right.floated.item(href='#') blog
-      a.ui.right.floated.item(href='#') contact
- 
-  .ui.text.container
-    h4.ui.horizontal.divider.header
-      i.home.icon
-      | home
+  #nav
+    .ui.fixed.inverted.menu
+      h3.ui.container
+        #logo.left.menu
+          a.item(href='#') lukasBRybar
       
-    p.
-      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-      
-    .overlay.fixed(style='position: fixed; top: 80px; left: auto; z-index: 1;') 
-      .ui.labeled.icon.vertical.menu      
-        a.item 
-          i.facebook.icon 
-          | facebook
-        a.item 
-          i.google.plus.icon 
-          | google
-        a.item 
-          i.linkedin.icon 
-          | linkedin
-    .overlay.placeholder(style='display: block; visibility: hidden;')
-
-    p.
-      Pllentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-      
-    h4.ui.horizontal.divider.header
-      i.child.icon
-      | about
-      
-    p.
-      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-    p.
-      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-      
-    h4.ui.horizontal.divider.header
-      i.tag.icon
-      | skills
-     
-    
-    .ui.container
-    
-
-      p asdad
+        a.item#menu(href='#') home
+        a.item#menu(href='#') about
+        a.item#menu(href='#') portfolio
+        a.item#menu(href='#') skills
+        a.item#menu(href='#') contact
+          
+        #social.right.menu
+          a.item(href='#'): i.facebook.icon
+          a.item(href='#'): i.google.icon
+          a.item(href='#'): i.youtube.icon
+          
+        #mobil.right.menu
+          #show-sidebar
+            a.item: i.sidebar.icon 
         
-      .ui.stackable.divided.grid
-      
-        .eight.wide.column
-          .ui.active.progress#html(data-percent="90")
-            .bar
-              .progress
-            .label
-              | HTML5 & CSS3 
-              | asd
-
-          .ui.active.progress#js(data-percent="20")
-            .bar
-              .progress
-            .label
-              | JavaScript
-          blockquote CoffeScript
-
-          .ui.active.progress#php(data-percent="40")
-            .bar
-              .progress
-            .label
-              | PHP
-              
-          .ui.active.progress#sql(data-percent="80")
-            .bar
-              .progress
-            .label
-              | SQL
-   
-        .eight.wide.column
-          .ui.active.progress#sql(data-percent="80")
-            .bar
-              .progress
-            .label
-              | SQL
+          .ui.left.inverted.vertical.menu.sidebar
+            #hide-sidebar: a.item menu
+              i.sidebar.icon
+            a.item(href='#') home 
+              i.facebook.icon 
+            a.item(href='#') about
+              i.facebook.icon         
+            a.item(href='#') portfolio 
+              i.facebook.icon 
+            a.item(href='#') skills
+              i.facebook.icon 
+            a.item(href='#') contact
+              i.facebook.icon    
+          
+  #main
+    .ui.main.text.container
+      h1.ui.header #lukasBRybar
+      .ui.icon.message
+        i.notched.circle.loading.icon
+        .content
+          .header
+            | 404
+          p Na stránke sa pracuje
+      .ui.card
+        .ui.slide.masked.reveal.image
+          img.visible.content(src='img/avatar.png')
+          img.hidden.content(src='img/avatar.png')
         
-          .ui.active.progress#sql(data-percent="80")
-            .bar
-              .progress
-            .label
-              | SQL
 
-          .ui.active.progress#sql(data-percent="80")
-            .bar
-              .progress
-            .label
-              | SQL
-              
-              
-       
 
-    
-    h4.ui.horizontal.divider.header
-      i.code.icon
-      | portfolio
 
-    img.ui.medium.right.floated.image.transition.visible(data-src='img/1.png' src='img/1.png')
-    p.
-      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. uisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. uisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
-      
-    h4.ui.horizontal.divider.header
-      i.tag.icon
-      | blog
-      
-      
-    h4.ui.horizontal.divider.header
-      i.at.icon
-      | contact
-  
-  .ui.vertical.footer.segment
-    .ui.center.aligned.container
-    
-      .ui.section.divider
-      .ui.stackable.divided.grid
-        .three.wide.column
-          h4.ui.header Site Map
-          .ui.link.list
-            a.item(href='') about
-            a.item(href='') features
-            a.item(href='') portfolio
-            a.item(href='') blog
-            a.item(href='') contact
-            
-        .three.wide.column
-          h4.ui.header Comunity
-          .ui.link.list
-            a.item(href='') Help Translate
-            a.item(href='') Join our Chat
-        
-        .five.wide.column.statistics
-          .ui.statistic.small
-            .value
-              i.eye.icon
-              |  2,204
-            .label
-              | Views
-              
-          .ui.statistic.small
-            .value
-              i.euro.icon
-              |  9,541
-            .label
-              | donate
-
-        .five.wide.column
-          h4.ui.header Help Preserve This Project
-          p Support for the continued development of Semantic UI
-          .ui.fade.animated.button(tabindex='0')
-            .hidden.content THANKS
-            .visible.content
-              i.shop.icon
-              | donate
-    
-      .ui.section.divider
-        
-      button.ui.icon.button
-        i.facebook.icon
-      button.ui.icon.button
-        i.google.plus.icon
-      button.ui.icon.button
-        i.linkedin.icon
-      button.ui.icon.button
-        i.youtube.icon
-      button.ui.icon.button
-        i.dropbox.icon
-      button.ui.icon.button
-        i.git.icon
-      
-      .ui.section.divider
-      img.ui.centered.mini.image(src='img/1.png') 
-      .ui.horizontal.small.divided.link.list
-        a.item(href='#') Free & Open Source (MIT)
+  #footer
+    .ui.inverted.vertical.footer.segment
+      .ui.center.aligned.container
+        .ui.stackable.inverted.divided.grid
+          .three.wide.column
+            h4.ui.inverted.header community
+            .ui.inverted.link.list
+              a.item(href='#') help translate
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+          .three.wide.column
+            h4.ui.inverted.header GROUP 1
+            .ui.inverted.link.list
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+          .three.wide.column
+            h4.ui.inverted.header GROUP 1
+            .ui.inverted.link.list
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+              a.item(href='#') LINK ONE
+          .seven.wide.column
+            h4.ui.inverted.header header
+            p Extra space for a call to action inside the footer that could help re-engage users.
+        .ui.inverted.section.divider
+        .ui.centered.mini.image
+        .ui.horizontal.inverted.small.divided.link.list
+          a.item(href='#') LINK ONE
+          a.item(href='#') LINK ONE
+          a.item(href='#') LINK ONE
+          a.item(href='#') LINK ONE
+          
   
   // JS
   script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js')
-  script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js')
+  script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js')
   script(type='text/javascript' src='js/script.js')
+
